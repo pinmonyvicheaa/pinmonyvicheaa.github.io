@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Monyvichea's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/script.js" defer></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("duOAh6UKEFnja_8Pf");
+        })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="intro">
+            <div class="name" id="home-name">
+                Hey there!<br>I am <span id="typed"></span>
+            </div>
+            <div class="line">
+                Student | Noob | C Programming
+            </div>
+            <div class="homesocial">
+                <a href="https://www.linkedin.com/in/pin-monyvichea-952432215/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/pinmonyvicheaa" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/p.vichea/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://t.me/pinmonyvichea" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+
+        </div>
+
+        <img src="/ppic.png">
+        
+    </section>
+    
+    <section class="about" id="about">
+
+        <div class="heading">About Me</div>
+
+        <div class="aboutpart">
+            <img src="/aboutimage2.png">
+            <div class="abinfo">I am a Student Year 1 in Computer Science at Royal University of Phnom Penh. I completed my schooling at Preah Sisowath High School.<br>I'm interested about Coding. I also have Interest in Port rom by using some code.<br><br>Life is struggle!</div>
+        </div>
+
+    </section>
+
+
+    <section class="projects" id="projects">
+        <div class="heading">My Projects</div>
+        <div class="gallery">
+            <div class="card">
+                <div class="pr-img">
+                    <img src="/quiz-game.jpg">
+                </div>
+                <div class="pr-title">
+                    Quiz Game
+                </div>
+                <div class="pr-info">
+                    Click Here
+                </div>
+                <a href="https://drive.google.com/drive/folders/1VyfKjFre2KoyBQxOQhzLTk4e2cB2zAa4" target="_blank">
+                    <div class="pr-redirect">></div>
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+    <section class="contact" id="contact">
+
+        <div class="heading">Contact</div>
+
+        <div class="contpart">
+            <div class="c-social">
+                <div class="sclbtn">
+                <a href="https://www.linkedin.com/in/pin-monyvichea-952432215/" target="_blank"><img src="/linkedin.png">
+                        <label for="a">/Pin Monyvichea</label>
+                    </a>
+                </div>
+                <div class="sclbtn">
+                    <a href="https://github.com/pinmonyvicheaa" target="_blank"><img src="/github.png">
+                        <label for="a">/Pin Monyvichea</label>
+                    </a>
+                </div>
+                <div class="sclbtn">
+                    <a href="https://www.instagram.com/p.vichea/" target="_blank"><img src="/instagram.png">
+                        <label for="a">p.vichea</label>
+                    </a>
+                </div>
+                <div class="sclbtn">
+                    <a href="https://t.me/pinmonyvichea" target="_blank"><img src="/telegram.png">
+                        <label for="a">@pinmonyvichea</label>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cont-form">
+                <p>Drop a message</p>
+                <form>
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <textarea rows="5" id="message" placeholder="Message" required></textarea>
+                </form>
+                <button class="contact-btn" type="submit" onclick="sendMail()">Send</button>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
