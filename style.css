@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "SNKhNews";
+  src: url(SNKhNews.ttf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GarnetCapitals";
+  src: url(GarnetCapitals.ttf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Robofan";
+  src: url(Robofan.otf) format("truetype");
+  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(27, 27, 27);
+  padding: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: purple;
+  border-radius: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+.header:hover::before {
+  left: 100%;
+}
+.logo {
+  width: 136px;
+}
+
+.navbar a {
+  font-family: "SNKhNews", sans-serif;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: purple;
+}
+.nav {
+  background: #171717;
+}
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+  padding: 3rem calc((100vw - 1300px) / 2);
+}
+.column-left {
+  font-family: "GarnetCapitals", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  padding: 0rem 2rem;
+}
+.column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+.column-left p {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+.nav-image {
+  width: 330px;
+  height: 330px;
+}
+button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
+  color: black;
+  background: white;
+  cursor: pointer;
+  border-radius: 50px;
+}
+button:hover {
+  background: black;
+  color: white;
+}
+
+.about {
+  padding-top: 5%;
+  padding-bottom: 75px;
+  background-color: #242222;
+  display: block;
+  color: #fff;
+}
+.heading {
+  font-family: "SNKhNews", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  border-left: 3px solid purple;
+  padding: 0 10px;
+  margin: 20px 10%;
+  color: rgb(204, 204, 204);
+}
+.aboutpart {
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 125px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.aboutpart img {
+  height: 250px;
+  width: 335px;
+  object-fit: cover;
+}
+.abinfo {
+  font-family: "Robofan", sans-serif;
+  margin-left: 60px;
+  max-width: 600px;
+  font-size: 20px;
+  color: antiquewhite;
+  align-items: center;
+  display: flex;
+  text-align: justify;
+}
+
+.contact {
+  height: 100vh;
+  padding-top: 5%;
+  padding-bottom: 75px;
+  background-color: #1b1a1a;
+}
+.contpart {
+  width: 80%;
+  margin: 70px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.sclbtn {
+  height: 40px;
+  width: 250px;
+  display: flex;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.sclbtn label {
+  font-size: 17px;
+  color: #fff;
+  margin-left: 10px;
+  float: right;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.sclbtn img {
+  height: 100%;
+}
+.sclbtn:hover {
+  transform: translateY(10px);
+}
