@@ -20,12 +20,20 @@
   width: 3px;
 }
 ::-webkit-scrollbar-track {
-  background: rgb(27, 27, 27);
   padding: 20px;
 }
 ::-webkit-scrollbar-thumb {
   background: purple;
   border-radius: 100px;
+}
+
+:root{
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+}
+.dark-theme{
+  --primary-color: #000106;
+  --secondary-color: #fff;
 }
 
 * {
@@ -40,13 +48,14 @@
   left: 0;
   width: 100%;
   padding: 20px 100px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--primary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(10px);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(185, 42, 189);
 }
+
 .header::before {
   content: "";
   position: absolute;
@@ -57,7 +66,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.4),
+    rgba(207, 114, 205),
     transparent
   );
   transition: 0.5s;
@@ -69,33 +78,42 @@
   width: 136px;
 }
 
+.icon{
+  width: 25px;
+  cursor: pointer;
+}
+
 .navbar a {
   font-family: "SNKhNews", sans-serif;
   font-size: 22px;
-  color: #fff;
+  color:var(--secondary-color);
   text-decoration: none;
   margin-left: 35px;
   transition: 0.3s;
 }
+
 .navbar a:hover {
   color: purple;
 }
+
 .nav {
-  background: #171717;
+  background: var(--primary-color);
 }
+
 .nav-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 95vh;
   padding: 3rem calc((100vw - 1300px) / 2);
 }
+
 .column-left {
   font-family: "GarnetCapitals", sans-serif;
+  color:var(--secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  color: white;
   padding: 0rem 2rem;
 }
 .column-left h1 {
@@ -121,31 +139,32 @@ button {
   padding: 1rem 3rem;
   font-size: 1rem;
   border: none;
-  color: black;
-  background: white;
+  color:var(--primary-color);
+  background: var(--secondary-color);
   cursor: pointer;
   border-radius: 50px;
+  
 }
+
 button:hover {
-  background: black;
-  color: white;
+  background: var(--primary-color);
+  color:var(--secondary-color);
 }
 
 .about {
   padding-top: 5%;
   padding-bottom: 75px;
-  background-color: #242222;
   display: block;
-  color: #fff;
+  background: var(--primary-color);
 }
 .heading {
   font-family: "SNKhNews", sans-serif;
+  color:var(--secondary-color);
   font-size: 30px;
   font-weight: bold;
   border-left: 3px solid purple;
   padding: 0 10px;
   margin: 20px 10%;
-  color: rgb(204, 204, 204);
 }
 .aboutpart {
   width: 80%;
@@ -154,6 +173,7 @@ button:hover {
   margin-bottom: 125px;
   display: flex;
   justify-content: space-evenly;
+  color:var(--secondary-color);
 }
 .aboutpart img {
   height: 250px;
@@ -165,7 +185,6 @@ button:hover {
   margin-left: 60px;
   max-width: 600px;
   font-size: 20px;
-  color: antiquewhite;
   align-items: center;
   display: flex;
   text-align: justify;
@@ -175,7 +194,7 @@ button:hover {
   height: 100vh;
   padding-top: 5%;
   padding-bottom: 75px;
-  background-color: #1b1a1a;
+  background: var(--primary-color);
 }
 .contpart {
   width: 80%;
@@ -192,11 +211,11 @@ button:hover {
 }
 .sclbtn label {
   font-size: 17px;
-  color: #fff;
   margin-left: 10px;
   float: right;
   margin-top: 5px;
   cursor: pointer;
+  color:var(--secondary-color);
 }
 .sclbtn img {
   height: 100%;
