@@ -17,6 +17,7 @@
       <a href="#home">Home</a>
       <a href="#about">អំពីខ្ញុំ</a>
       <a href="#contact">ទំនាក់ទំនង</a>
+      <img src="./moon.png" class="icon" id="icon"/>
     </nav>
   </header>
 </body>
@@ -25,7 +26,7 @@
 <section class="nav">
   <div class="nav-container">
     <div class="column-left">
-      <h1>I am Pin Monyvichea</h1>
+      <h1>I am Pin Monyvichea 💻</h1>
       <p>Student | IT | Newbie</p>
     </p>
     <a href="https://dev-miuitulipromport.pantheonsite.io/2021/12/24/miui-alienware-edition/">
@@ -71,4 +72,18 @@
                   <label for="a">p.vichea</label>
               </a>
           </div>
+
+<script>
+  var icon = document.getElementById("icon");
+  icon.onclick=function(){
+  document.body.classList.toggle("dark-theme");
+  if(document.body.classList.contains("dark-theme")){
+    icon.src= "./sun.png";
+  }else{
+    icon.src= "./moon.png";
+  } 
+}
+</script>
+
+</body>          
 </html>
