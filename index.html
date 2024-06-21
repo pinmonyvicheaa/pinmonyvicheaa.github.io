@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="x-icon" href="PinMonyvichea.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pin Monyvichea's</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+<body>
+  <header class="header">
+    <a href="index.html">
+    <img src="MyLogo.png" class="logo" />
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">អំពីខ្ញុំ</a>
+      <a href="#contact">ទំនាក់ទំនង</a>
+      <img src="./moon.png" class="icon" id="icon"/>
+    </nav>
+  </header>
+</body>
+
+<section class="home" id="home"></section>
+<section class="nav">
+  <div class="nav-container">
+    <div class="column-left">
+      <h1>I am Pin Monyvichea 💻</h1>
+      <p>Student | IT | Newbie</p>
+    </p>
+    <a href="https://dev-miuitulipromport.pantheonsite.io/2021/12/24/miui-alienware-edition/">
+    <button>My Project</button>
+  </a>
+    </div>
+    <div class="column-right">
+      <img src="./MyPic.png" class="nav-image" />
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="heading">អំពីខ្ញុំ</div>
+  <div class="aboutpart">
+    <img src="/Vichea.png" />
+    <div class="abinfo">
+      I am a Student Year 3 in Computer Science at Royal University of Phnom
+      Penh. I completed my schooling at Preah Sisowath High School.<br />I'm
+      interested about Coding.<br /><br />Life is struggle!
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="heading">ទំនាក់ទំនង</div>
+  <div class="contpart">
+      <div class="sclbtn">
+          <a href="https://www.youtube.com/@monyvicheapin" target="_blank"><img src="/Youtube.png">
+                  <label for="a">Monyvichea Pin</label>
+              </a>
+          </div>
+          <div class="sclbtn">
+              <a href="https://github.com/pinmonyvicheaa" target="_blank"><img src="/github.png">
+                  <label for="a">Pin Monyvichea</label>
+              </a>
+          </div>
+          <div class="sclbtn">
+              <a href="https://t.me/pinmonyvichea" target="_blank"><img src="/telegram.png">
+                  <label for="a">@pinmonyvichea</label>
+              </a>
+          </div>
+          <div class="sclbtn">
+              <a href="https://www.instagram.com/p.vichea/" target="_blank"><img src="/instagram.png">
+                  <label for="a">p.vichea</label>
+              </a>
+          </div>
+
+<script>
+  var icon = document.getElementById("icon");
+  icon.onclick=function(){
+  document.body.classList.toggle("dark-theme");
+  if(document.body.classList.contains("dark-theme")){
+    icon.src= "./sun.png";
+  }else{
+    icon.src= "./moon.png";
+  } 
+}
+</script>
+
+</body>          
+</html>
