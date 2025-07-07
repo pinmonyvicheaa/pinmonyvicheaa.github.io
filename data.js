@@ -89,12 +89,12 @@ let projects = [
         codeLink: "https://github.com/pinmonyvicheaa/tailwind-ecommerce",
         stack: ["Tailwind"]
     },
-        {
+    {
         title: 'ECommerce-PHP',
         img: "ECommerce-PHP.png",
         info: "Build a store with PHP+PDO.",
         type: 'mini',
-        previewLink: "https://github.com/user-attachments/assets/3008d0a6-dc65-481c-9850-323dcb311ab7",
+        previewLink: "https://github.com/pinmonyvicheaa/pinmonyvicheaa.github.io/blob/main/project-images/ECommerce-PHP.png",
         codeLink: "https://github.com/pinmonyvicheaa/ecommerce-php",
         stack: ["PHP"]
     },
