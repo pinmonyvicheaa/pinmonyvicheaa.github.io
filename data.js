@@ -49,13 +49,11 @@ let skillSet = [
         level: 1,
         type: 1
     },
-
     {
         name: "PHP",
         level: 2,
         type: 1
     },
-
     {
         name: "Laravel",
         level: 2,
