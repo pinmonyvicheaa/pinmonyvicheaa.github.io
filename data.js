@@ -48,7 +48,14 @@ let skillSet = [
         name: "Figma",
         level: 1,
         type: 1
+    },
+
+    {
+        name: "PHP",
+        level: 2,
+        type: 1
     }
+    
 ]
 
 let projects = [
