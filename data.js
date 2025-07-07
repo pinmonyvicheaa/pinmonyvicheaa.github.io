@@ -56,12 +56,11 @@ let skillSet = [
         type: 1
     },
 
-        {
+    {
         name: "Laravel",
         level: 2,
         type: 1
     },
-    
 ]
 
 let projects = [
